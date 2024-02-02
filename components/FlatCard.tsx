@@ -9,6 +9,15 @@ const FlatCard = () => {
 		<View style = {[styles.card , styles.card1]}>
 		  <Text>Card Item Red</Text>
 		</View>
+		<View style = {[styles.card , styles.card2]}>
+		  <Text>Card Item Blue</Text>
+		</View>
+		<View style = {[styles.card , styles.card3]}>
+		  <Text>Card Item Green</Text>
+		</View>
+		<View style = {[styles.card , styles.card1]}>
+		  <Text>Card Item Red</Text>
+		</View>
 	  </View>
 	</View>
   )
@@ -19,7 +28,13 @@ const styles = StyleSheet.create({
 		fontWeight: 'bold',
 		textAlign: 'center'
 	},
-	container: {},
+	container: {
+		flex : 1,
+		flexDirection: 'row',
+
+		padding: 4,
+		margin: 4,
+	},
 	card: {
 		flex  : 1,
 		alignItems: 'center',
@@ -27,10 +42,19 @@ const styles = StyleSheet.create({
 		height: 100,
 		width: 100,
 		margin: 10,
-		backgroundColor : "red",
+
 		borderRadius : 10,
 	},
-	card1: {},
+	card1: {
+		backgroundColor : "red",
+	},
+	card2 : {
+		backgroundColor : "blue",
+	},
+	card3 : {
+				backgroundColor : "green",
+
+	}
 });
 
 export default FlatCard;

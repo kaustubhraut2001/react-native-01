@@ -7,15 +7,15 @@ const FancyCards = () => {
   return (
     <View>
       <Text style={styles.headingtext}>FancyCards</Text>
-      <View style={[styles.card, styles.cardelevated]}>
+      <View style={[styles.card, styles.conatiner]}>
         <Image
           style={{width: '100%', aspectRatio: 5 / 1}}
           source={{
             uri: 'https://media.istockphoto.com/id/1445069240/photo/businessman-pointing-folder-and-document.jpg?s=1024x1024&w=is&k=20&c=SAoFlG42g-Shmhj0lp9Q8CirUHnTNwrGCJ6Ui28dlX4=',
           }}
         />
-        <View style={styles.cardbody}>
-          <Text>Image for Testing</Text>
+        <View>
+          <Text style={styles.cardbody}>Image for Testing</Text>
         </View>
       </View>
     </View>
@@ -23,6 +23,11 @@ const FancyCards = () => {
 };
 
 const styles = StyleSheet.create({
+  conatiner: {
+    flex: 1,
+    flexGrow: 1,
+    backgroundColor: 'lightgrey',
+  },
   headingtext: {
     fontSize: 20,
     fontWeight: 'bold',

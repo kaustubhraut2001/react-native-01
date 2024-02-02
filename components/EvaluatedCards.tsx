@@ -1,7 +1,8 @@
-import {View, Text, ScrollView, StyleSheet} from 'react-native';
+import {View, Text, ScrollView, StyleSheet, Dimensions} from 'react-native';
 import React from 'react';
 
 const EvaluatedCards = () => {
+  const {width, height} = Dimensions.get('window');
   return (
     <View>
       <Text style={styles.heading}>Evaluated Cards</Text>
@@ -45,7 +46,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    height: 100,
+    height: `height`,
     width: 100,
     margin: 10,
 
@@ -55,7 +56,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'yellow',
     elevation: 4,
     shadowOffset: {
-      width: 0,
+      width: 5,
       height: 2,
     },
     shadowRadius: 6,

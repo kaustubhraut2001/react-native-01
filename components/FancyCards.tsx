@@ -9,7 +9,7 @@ const FancyCards = () => {
       <Text style={styles.headingtext}>FancyCards</Text>
       <View style={[styles.card, styles.conatiner]}>
         <Image
-          style={{width: '100%', aspectRatio: 5 / 1}}
+          style={[{width: '100%', aspectRatio: 5 / 1}, styles.card]}
           source={{
             uri: 'https://media.istockphoto.com/id/1445069240/photo/businessman-pointing-folder-and-document.jpg?s=1024x1024&w=is&k=20&c=SAoFlG42g-Shmhj0lp9Q8CirUHnTNwrGCJ6Ui28dlX4=',
           }}

@@ -60,6 +60,7 @@ const styles = StyleSheet.create({
       height: 2,
     },
     shadowRadius: 6,
+    shadowColor: 'black',
   },
 });
 
